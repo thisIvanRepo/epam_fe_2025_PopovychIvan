@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container container__header"></div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="section section--blog">
+                    <h2 class="section__title section__title--blog">Blog</h2>
+                    <div id="blog-posts" class="blog__list">
+                        <label class="blog__lable" for="search">
+                            <input
+                                id="search"
+                                class="blog__input"
+                                type="text"
+                                type="search"
+                                placeholder="Search by author"
+                            />
+                            <svg
+                                class="icon blog__input--search"
+                                width="32"
+                                height="32"
+                            >
+                                <use
+                                    href="./img/svg/icon_posts.svg#icon-search"
+                                ></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <button class="btn btn--read-more">Read more</button>
+                </div>
+            </div>
+        </main>
+
+        <script type="module" src="./js/blog.js"></script>
+    </body>
+</html>

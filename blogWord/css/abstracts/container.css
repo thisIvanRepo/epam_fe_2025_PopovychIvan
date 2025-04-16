@@ -1,0 +1,10 @@
+.container {
+    margin: 0 auto;
+    max-width: 1530px;
+    padding: 0 9px;
+}
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

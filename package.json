@@ -1,0 +1,24 @@
+{
+    "name": "epam_fe_2025_popovychivan",
+    "version": "1.0.0",
+    "description": "",
+    "homepage": "https://github.com/thisIvanRepo/epam_fe_2025_PopovychIvan#readme",
+    "bugs": {
+        "url": "https://github.com/thisIvanRepo/epam_fe_2025_PopovychIvan/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thisIvanRepo/epam_fe_2025_PopovychIvan.git"
+    },
+    "license": "ISC",
+    "author": "",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass --watch blogWord/scss:blogWord/css --no-source-map"
+    },
+    "devDependencies": {
+        "prettier": "^3.5.3"
+    }
+}

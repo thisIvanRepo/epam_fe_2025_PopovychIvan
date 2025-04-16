@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Students List</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container container__header"></div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <h2 class="student-title">Input student data</h2>
+
+                <div class="student-app">
+                    <!-- #region FORM -->
+                    <form class="student-form student-form--add">
+                        <label class="student-form__label">
+                            Name
+                            <input
+                                class="student-form__input"
+                                name="name"
+                                type="text"
+                                required
+                            />
+                        </label>
+                        <label class="student-form__label">
+                            Lastname
+                            <input
+                                class="student-form__input"
+                                name="lastname"
+                                type="text"
+                                required
+                            />
+                        </label>
+                        <label class="student-form__label">
+                            Year Start
+                            <input
+                                class="student-form__input"
+                                name="yearStart"
+                                type="number"
+                                required
+                            />
+                        </label>
+                        <label class="student-form__label">
+                            Year End
+                            <input
+                                class="student-form__input"
+                                name="yearEnd"
+                                type="number"
+                                required
+                            />
+                        </label>
+                        <label class="student-form__label">
+                            Age
+                            <input
+                                class="student-form__input"
+                                name="age"
+                                type="number"
+                                required
+                            />
+                        </label>
+                        <label class="student-form__label">
+                            Course
+                            <input
+                                class="student-form__input"
+                                name="course"
+                                type="number"
+                                required
+                            />
+                        </label>
+                        <button
+                            class="student-form__button student-form__button--save"
+                            type="submit"
+                            disabled
+                        >
+                            Save
+                        </button>
+                    </form>
+                    <!-- #endregion -->
+                    <h2 class="student-title">Student List</h2>
+                    <!-- #region TABLE -->
+                    <table class="student-table">
+                        <thead class="student-table__head">
+                            <tr class="student-table__row">
+                                <th class="student-table__cell">#</th>
+                                <th class="student-table__cell">Name</th>
+                                <th class="student-table__cell">Lastname</th>
+                                <th class="student-table__cell">Year Start</th>
+                                <th class="student-table__cell">Year End</th>
+                                <th class="student-table__cell">Age</th>
+                                <th class="student-table__cell">Course</th>
+                                <th
+                                    class="student-table__cell student-table__cell--actions"
+                                >
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="student-table__body"></tbody>
+                    </table>
+                    <!-- #endregion -->
+                </div>
+                <!-- #region MODAL -->
+                <div class="modal modal--edit">
+                    <div class="modal__content">
+                        <form class="student-form student-form--edit">
+                            <label class="student-form__label">
+                                Name
+                                <input
+                                    class="student-form__input"
+                                    name="name"
+                                    required
+                                />
+                            </label>
+                            <label class="student-form__label">
+                                Lastname
+                                <input
+                                    class="student-form__input"
+                                    name="lastname"
+                                    required
+                                />
+                            </label>
+                            <label class="student-form__label">
+                                Year Start
+                                <input
+                                    class="student-form__input"
+                                    name="yearStart"
+                                    type="number"
+                                    required
+                                />
+                            </label>
+                            <label class="student-form__label">
+                                Year End
+                                <input
+                                    class="student-form__input"
+                                    name="yearEnd"
+                                    type="number"
+                                    required
+                                />
+                            </label>
+                            <label class="student-form__label">
+                                Age
+                                <input
+                                    class="student-form__input"
+                                    name="age"
+                                    type="number"
+                                    required
+                                />
+                            </label>
+                            <label class="student-form__label">
+                                Course
+                                <input
+                                    class="student-form__input"
+                                    name="course"
+                                    type="number"
+                                    required
+                                />
+                            </label>
+                            <div class="modal__buttons">
+                                <button
+                                    class="student-form__button student-form__button--save"
+                                    type="submit"
+                                >
+                                    Save
+                                </button>
+                                <button
+                                    class="student-form__button student-form__button--cancel"
+                                    type="button"
+                                >
+                                    Cancel
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </div>
+        </main>
+
+        <script type="module" src="./js/student.js"></script>
+    </body>
+</html>

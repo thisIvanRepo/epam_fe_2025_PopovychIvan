@@ -1,0 +1,135 @@
+// #region Stars Rating
+.stars {
+    @include flex(row, center, flex-start, 4px);
+}
+
+.star {
+    width: 19px;
+    height: 19px;
+    @include icon-bg('../img/svg/star.svg');
+
+    &--full {
+        @include icon-bg('../img/svg/star_full.svg');
+    }
+}
+// #endregion
+
+// #region Blog
+.blog {
+    &__list {
+        @include flex(column, flex-end, flex-start, $gap-post-list);
+        margin-bottom: $margin-bottom-section;
+    }
+
+    &__lable {
+        position: relative;
+        margin-right: 190px;
+    }
+
+    &__input {
+        width: $input-width;
+        padding: $input-padding;
+        border: 1px solid $border_light;
+        border-radius: $input-radius;
+        font-size: $font-small;
+        @include transition();
+
+        &--search {
+            position: absolute;
+            top: 6px;
+            right: 12px;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $input_focus_color;
+        }
+    }
+
+    &__post {
+        position: relative;
+        border-radius: $input-radius;
+        overflow: hidden;
+        background-color: $post_bg_color;
+        @include transition();
+
+        &:hover {
+            box-shadow: 0px 11px 11px 0px $post_hover_shadow_color;
+        }
+    }
+}
+
+// #endregion
+
+// #region Post
+.post {
+    display: flex;
+
+    &__content {
+        @include flex(column, space-between, null, $gap-content);
+        padding: $post-padding;
+        padding-left: $post-padding-left;
+    }
+
+    &__header {
+        @include flex(null, null, null, $gap-header);
+        padding: 3px 6px;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: $font-author;
+        color: $color_text;
+    }
+
+    &__meta {
+        @include flex(column, null, null, $gap-meta);
+    }
+
+    &__details {
+        @include flex(row, center, center, $gap-details);
+
+        p {
+            font-size: $font-medium;
+            color: $icon_color_secondary;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__body {
+        @include flex(column, null, null, $gap-body);
+        color: $color_text;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: $font-title;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: $font-author;
+    }
+
+    &__media {
+        min-width: 50%;
+
+        img {
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    video {
+        max-width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+// #endregion

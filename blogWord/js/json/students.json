@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Ivan",
+        "lastname": "Coropco",
+        "yearStart": 2010,
+        "yearEnd": 2015,
+        "age": 28,
+        "course": 5
+    },
+    {
+        "id": 2,
+        "name": "Anna",
+        "lastname": "Melnyk",
+        "yearStart": 2012,
+        "yearEnd": 2017,
+        "age": 25,
+        "course": 5
+    }
+]

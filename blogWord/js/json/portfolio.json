@@ -1,0 +1,47 @@
+[
+    {
+        "image": "img/portfolio/portfolio_1.jpg",
+        "title": "Art Ocean",
+        "description": "Photography, art, nature"
+    },
+    {
+        "image": "img/portfolio/portfolio_2.jpg",
+        "title": "City Guide",
+        "description": "Photography, city, way"
+    },
+    {
+        "image": "img/portfolio/portfolio_3.jpg",
+        "title": "Mountains",
+        "description": "Art, hiking"
+    },
+    {
+        "image": "img/portfolio/portfolio_4.jpg",
+        "title": "Island Escape",
+        "description": "Nature, island, ocean"
+    },
+    {
+        "image": "img/portfolio/portfolio_5.jpg",
+        "title": "Taj Mahal Glory",
+        "description": "Architecture, India, heritage"
+    },
+    {
+        "image": "img/portfolio/portfolio_6.jpg",
+        "title": "Savannah Sunset",
+        "description": "Africa, sunset, trees"
+    },
+    {
+        "image": "img/portfolio/portfolio_7.jpg",
+        "title": "Misty Highlands",
+        "description": "Carpathians, fog, meadow"
+    },
+    {
+        "image": "img/portfolio/portfolio_8.jpg",
+        "title": "Gentle Giants",
+        "description": "Giraffes, wildlife, savannah"
+    },
+    {
+        "image": "img/portfolio/portfolio_9.jpg",
+        "title": "Mountain Cabins",
+        "description": "Houses, mountains, serenity"
+    }
+]
