@@ -1,9 +1,24 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../abstracts/semantic-colors';
 // #region Stars Rating
 .stars {
     @include flex(row, center, flex-start, 4px);
+    position: relative;
+
+    &--full {
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
 }
 
 .star {
+    flex-shrink: 0;
+    display: inline-block;
     width: 19px;
     height: 19px;
     @include icon-bg('../img/svg/star.svg');
@@ -47,6 +62,7 @@
     }
 
     &__post {
+        width: 100%;
         position: relative;
         border-radius: $input-radius;
         overflow: hidden;
@@ -74,6 +90,7 @@
     &__header {
         @include flex(null, null, null, $gap-header);
         padding: 3px 6px;
+        width: fit-content;
     }
 
     &__name {
@@ -97,8 +114,8 @@
 
     &__icon {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: -2.5px;
+        top: -2.5px;
     }
 
     &__body {
@@ -109,6 +126,14 @@
     &__title {
         font-weight: 600;
         font-size: $font-title;
+    }
+
+    &__desc-wraper {
+        max-height: 120px;
+
+        &--audio {
+            max-height: 60px;
+        }
     }
 
     &__desc {

@@ -747,9 +747,20 @@ button {
     align-items: center;
     justify-content: flex-start;
     gap: 4px;
+    position: relative;
+}
+.stars--full {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .star {
+    flex-shrink: 0;
+    display: inline-block;
     width: 19px;
     height: 19px;
     background-image: url('../img/svg/star.svg');
@@ -794,6 +805,7 @@ button {
     border-color: #4d4c49;
 }
 .blog__post {
+    width: 100%;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -819,6 +831,7 @@ button {
     display: flex;
     gap: 16px;
     padding: 3px 6px;
+    width: fit-content;
 }
 .post__name {
     font-weight: 500;
@@ -843,8 +856,8 @@ button {
 }
 .post__icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -2.5px;
+    top: -2.5px;
 }
 .post__body {
     display: flex;
@@ -855,6 +868,12 @@ button {
 .post__title {
     font-weight: 600;
     font-size: 24px;
+}
+.post__desc-wraper {
+    max-height: 120px;
+}
+.post__desc-wraper--audio {
+    max-height: 60px;
 }
 .post__desc {
     font-weight: 400;
