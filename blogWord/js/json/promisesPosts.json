@@ -1,0 +1,20 @@
+[
+  { 
+    "title": "Post 1",
+    "src": "img/testimonials/ivan_frankivsky.png",
+    "content": "As a front-end engineer, I focus on making interfaces not just functional, but meaningful. Every component tells a story.",
+    "alt": "Ivan Franko"
+  },
+  { 
+    "title": "Post 2",
+    "src": "img/testimonials/muhailo_zaporozky.jpg",
+    "content": "In DevOps, I ensure our systems are scalable and reliable. I treat infrastructure like poetry — structured, elegant, and robust.",
+    "alt": "Mykhailo Zaporozky"
+  },
+  { 
+    "title": "Post 3",
+    "src": "img/testimonials/taras_sheva.png",
+    "content": "Leading a team is like writing a great epic — strategy, vision, and inspiration must align. I build teams that build the future.",
+    "alt": "Taras Shevchenko"
+  }
+]

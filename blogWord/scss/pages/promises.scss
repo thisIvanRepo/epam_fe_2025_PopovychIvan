@@ -1,0 +1,82 @@
+// ==== variables ====
+$container-width: 500px;
+$post-gap: 10px;
+$wrapper-gap: 20px;
+
+$border-radius: 5px;
+$border-color: black;
+
+$progress-height: 4px;
+$progress-bg: #ddd;
+$progress-fill-color: #007bff;
+
+$animation-duration: 3s;
+$fade-duration: 0.5s;
+
+$post-max-width: 500px;
+$image-max-width: 150px;
+$image-max-height: 200px;
+
+
+.root-promises {
+  display: flex;
+  flex-direction: column;
+  gap: $post-gap;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  width: fit-content;
+}
+
+.links-wraper {
+  display: flex;
+  gap: $wrapper-gap;
+  margin: 0 auto;
+}
+
+.wrapper-posts {
+  display: flex;
+  flex-direction: column;
+  gap: $wrapper-gap;
+}
+
+.post {
+  display: flex;
+  gap: $post-gap;
+  max-width: $post-max-width;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  opacity: 1;
+  transition: opacity $fade-duration ease;
+
+  &__image {
+    max-width: $image-max-width;
+    max-height: $image-max-height;
+    display: flex;
+    object-fit: cover;
+  }
+}
+
+.progress-bar {
+  width: $container-width;
+  height: $progress-height;
+  background-color: $progress-bg;
+  top: 0;
+  left: 0;
+}
+
+.progress-fill {
+  width: 100%;
+  height: 100%;
+  background-color: $progress-fill-color;
+  animation: progress-decrease $animation-duration linear forwards;
+}
+
+@keyframes progress-decrease {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}

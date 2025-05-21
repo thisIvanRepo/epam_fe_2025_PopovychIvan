@@ -1,0 +1,10 @@
+.wraper__footer {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.footer__map {
+  width: 492px;
+  height: 678px;
+}

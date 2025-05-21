@@ -121,12 +121,12 @@ function testimonialsSlider(containerId, slides, interval, btnNext, btnPrev) {
         setTimeout(() => (isLocked = false), 1000);
 
         if (diff > 0) {
-            this.nextSlide();
             this.stopAutoSlide();
+            this.nextSlide();
             this.startAutoSlide();
         } else {
-            this.prevSlide();
             this.stopAutoSlide();
+            this.prevSlide();
             this.startReversAutoSlide();
         }
     });
