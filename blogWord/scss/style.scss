@@ -1,0 +1,24 @@
+// Normalize, reset setting of default styles
+@import '../../blogWord/scss/base/normalize';
+@import '../../blogWord/scss/base/reset';
+@import '../../blogWord/scss/base/fonts';
+@import '../../blogWord/scss/abstracts/states';
+@import '../../blogWord/scss/abstracts/colors';
+@import '../../blogWord/scss/abstracts/semantic-colors';
+@import '../../blogWord/scss/abstracts/variables';
+@import '../../blogWord/scss/abstracts/states';
+@import '../../blogWord/scss/abstracts/mixins';
+// === Layout ===
+// Default container and layout helpers
+@import '../../blogWord/scss/helpers/container';
+@import '../../blogWord/scss/helpers/section';
+//components
+@import '../../blogWord/scss/components/title';
+@import '../../blogWord/scss/components/buttons';
+@import '../../blogWord/scss/components/header';
+@import '../../blogWord/scss/components/top-bar';
+@import '../../blogWord/scss/components/nav';
+@import '../../blogWord/scss/components/testimonials';
+// pages
+@import '../../blogWord/scss/pages/stydent';
+@import '../../blogWord/scss/pages/blog';

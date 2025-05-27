@@ -1,0 +1,9 @@
+[
+    { "name": "Home", "href": "/blogWord/index.html" },
+    { "name": "Portfolio", "href": "#portfolio" },
+    { "name": "Blog", "href": "/blogWord/blog.html" },
+    { "name": "Pages", "href": "#pages" },
+    { "name": "About", "href": "#about" },
+    { "name": "Contact", "href": "#contact" },
+    { "name": "Student", "href": "/blogWord/student.html" }
+]

@@ -1,0 +1,160 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../abstracts/semantic-colors';
+// #region Stars Rating
+.stars {
+    @include flex(row, center, flex-start, 4px);
+    position: relative;
+
+    &--full {
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+}
+
+.star {
+    flex-shrink: 0;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    @include icon-bg('../img/svg/star.svg');
+
+    &--full {
+        @include icon-bg('../img/svg/star_full.svg');
+    }
+}
+// #endregion
+
+// #region Blog
+.blog {
+    &__list {
+        @include flex(column, flex-end, flex-start, $gap-post-list);
+        margin-bottom: $margin-bottom-section;
+    }
+
+    &__lable {
+        position: relative;
+        margin-right: 190px;
+    }
+
+    &__input {
+        width: $input-width;
+        padding: $input-padding;
+        border: 1px solid $border_light;
+        border-radius: $input-radius;
+        font-size: $font-small;
+        @include transition();
+
+        &--search {
+            position: absolute;
+            top: 6px;
+            right: 12px;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $input_focus_color;
+        }
+    }
+
+    &__post {
+        width: 100%;
+        position: relative;
+        border-radius: $input-radius;
+        overflow: hidden;
+        background-color: $post_bg_color;
+        @include transition();
+
+        &:hover {
+            box-shadow: 0px 11px 11px 0px $post_hover_shadow_color;
+        }
+    }
+}
+
+// #endregion
+
+// #region Post
+.post {
+    display: flex;
+
+    &__content {
+        @include flex(column, space-between, null, $gap-content);
+        padding: $post-padding;
+        padding-left: $post-padding-left;
+    }
+
+    &__header {
+        @include flex(null, null, null, $gap-header);
+        padding: 3px 6px;
+        width: fit-content;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: $font-author;
+        color: $color_text;
+    }
+
+    &__meta {
+        @include flex(column, null, null, $gap-meta);
+    }
+
+    &__details {
+        @include flex(row, center, center, $gap-details);
+
+        p {
+            font-size: $font-medium;
+            color: $icon_color_secondary;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: -2.5px;
+        top: -2.5px;
+    }
+
+    &__body {
+        @include flex(column, null, null, $gap-body);
+        color: $color_text;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: $font-title;
+    }
+
+    &__desc-wraper {
+        max-height: 120px;
+
+        &--audio {
+            max-height: 60px;
+        }
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: $font-author;
+    }
+
+    &__media {
+        min-width: 50%;
+
+        img {
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    video {
+        max-width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+// #endregion

@@ -1,0 +1,43 @@
+.nav {
+    &__list {
+        display: flex;
+        gap: 3.375rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 20px;
+        line-height: 150%;
+        color: $nav_item_color;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            bottom: -6px;
+            height: 1px;
+            background-color: #393737;
+
+            transition: 0.3s;
+            transform: scale(0);
+            transform-origin: center;
+        }
+
+        &:hover::after,
+        &:focus::after,
+        &.active::after {
+            transform: scale(1);
+        }
+
+        &:focus::after {
+            outline: none;
+        }
+    }
+}

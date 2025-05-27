@@ -1,0 +1,4 @@
+.portfolio__list {
+    display: flex;
+    gap: 36px;
+}
