@@ -20,7 +20,7 @@
   gap: 20px;
 }
 
-.post {
+.post-promises {
   display: flex;
   gap: 10px;
   max-width: 500px;
@@ -29,7 +29,7 @@
   opacity: 1;
   transition: opacity 0.5s ease;
 }
-.post__image {
+.post-promises__image {
   max-width: 150px;
   max-height: 200px;
   display: flex;

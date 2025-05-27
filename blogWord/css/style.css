@@ -535,6 +535,12 @@ button {
 .footer__map {
   width: 492px;
   height: 678px;
+  display: none;
+}
+.footer__map--placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .top-bar {
@@ -918,7 +924,7 @@ button {
   gap: 20px;
 }
 
-.post {
+.post-promises {
   display: flex;
   gap: 10px;
   max-width: 500px;
@@ -927,7 +933,7 @@ button {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
-.post__image {
+.post-promises__image {
   max-width: 150px;
   max-height: 200px;
   display: flex;

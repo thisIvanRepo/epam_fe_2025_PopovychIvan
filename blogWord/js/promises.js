@@ -13,7 +13,7 @@ const linksWrapperClass = 'links-wraper';
 const progressBarClass = 'progress-bar';
 const progressFillClass = 'progress-fill';
 const postsWrapperClass = 'wrapper-posts';
-const postSelector = '.post';
+const postSelector = '.post-promises';
 const delayStep = 300;
 
 // === functions helpers ===
