@@ -1,12 +1,12 @@
 .btn {
-    width: 154px;
-    height: 60px;
-    border-radius: 6px;
-    border: 1px solid #393737;
-    color: #393737;
-    transition: 0.3s ease;
+  width: 154px;
+  height: 60px;
+  border-radius: 6px;
+  border: 1px solid #393737;
+  color: #393737;
+  transition: 0.3s ease;
 }
 .btn:hover {
-    background-color: #393737;
-    color: #fff;
+  background-color: #393737;
+  color: #fff;
 }
